@@ -1,0 +1,18 @@
+.page {
+    width: 100%;
+}
+
+
+@media all and (min-width: 768px) {
+    .page {
+        width: 100%;
+        max-width: 768px;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .page {
+        width: 100%;
+        max-width: 1100px;
+    }
+}

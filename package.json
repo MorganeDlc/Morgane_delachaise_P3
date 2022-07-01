@@ -1,0 +1,22 @@
+{
+  "name": "projet3-git",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganeDlc/Projet3-git.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorganeDlc/Projet3-git/issues"
+  },
+  "homepage": "https://github.com/MorganeDlc/Projet3-git#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
