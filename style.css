@@ -1,2 +1,63 @@
-@import "./sass/base/base.css";
-@import "./sass/layout/layout.css";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+body {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+
+.page {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .page {
+    width: 100%;
+    max-width: 768px;
+  }
+}
+@media all and (min-width: 1100px) {
+  .page {
+    width: 100%;
+    max-width: 1100px;
+  }
+}
+/* HEADER */
+.header {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.137);
+}
+.header__logo {
+  text-align: center;
+  font-family: Shrikhand;
+  padding: 15px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+  width: 100%;
+}
+.footer__logo {
+  font-family: Shrikhand;
+  font-size: 110%;
+}
+.footer__list {
+  list-style: none;
+  padding: 0px;
+}
+.footer__list li {
+  margin-bottom: 10px;
+}
+.footer__list a {
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+}
+.footer__icon {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.footer__icon i {
+  margin-right: 10px;
+}/*# sourceMappingURL=style.css.map */
