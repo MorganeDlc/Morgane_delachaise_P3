@@ -1,0 +1,56 @@
+/* RESTAURANTS */
+
+.restaurants {
+    background-color: #F6F6F6;
+    padding: 20px 20px;
+    padding-bottom: 50px;
+    h2 {
+        font-size: 160%;
+    }
+}
+.cards {
+    background-color: white;
+    border-radius: 15px;
+    @include ombre-gris;
+    margin-bottom: 20px;
+    position: relative;
+    a {
+        text-decoration: none;
+    }
+    img {
+        height: 190px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+    }
+    &__texte {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 10px 10px 0 10px;
+        color: black;
+        h3{
+            margin: 0;
+        }
+        p {
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        i {
+            font-size: 25px;
+            margin-top: 7px;
+            margin-right: 20px;
+        }
+    }
+    &__tag {
+        background-color: $color-tertiary;
+        color: #008766;
+        font-weight: 500;
+        padding: 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 3px;
+    }
+}

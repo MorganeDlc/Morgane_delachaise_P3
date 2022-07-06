@@ -1,0 +1,54 @@
+/* FONTIONNEMENT */
+
+.fonctionnement {
+    padding: 30px 20px;
+    h2 {
+        font-size: 160%;
+    }
+}
+ul {
+    padding-left: 0px;
+}
+.etapes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 25px;
+    &__number {
+        background-color: $color-primary;
+        color:white;
+        border-radius: 50%;
+        font-size: 90%;
+        padding: 5px 9px;
+        position: absolute;
+    }
+    &__contain {
+        background-color: #f4f4f4;
+        padding: 12px 30px 12px 20px;
+        margin-left: 18px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 13px #d2d2d2;
+        display:flex;
+        align-items: center;
+        width: 500px;
+        i {
+            color: gray;
+            margin: 0 15px;
+            font-size: 20px;
+        }
+        p {
+            font-size: 110%;
+            font-weight: 500;
+            color: rgb(52, 52, 52);
+            margin-left: 10px;
+        }
+        &:hover {
+            background-color: #F5EDFF;
+            cursor: pointer;
+            i {
+                color: $color-primary;
+            }
+        }
+
+    }
+}
