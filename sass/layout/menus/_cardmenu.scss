@@ -1,0 +1,37 @@
+/* CARDS PAGE MENU */
+
+.card {
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include ombre-gris;
+    &__texte {
+        h3 {
+            margin: 5px 0 7px 0;
+            font-weight: 500;
+            font-size: 120%;
+            flex-wrap: nowrap;
+        }
+        p {
+            margin: 5px 0 5px 0px;
+            font-weight: 300;
+        }
+    }
+    &__prix {
+        font-weight: 500;
+        p {
+            margin: 0 10px 5px 0;
+        }
+    }
+    &__check {
+        display: none;
+    }
+}
+.menu-button {
+    text-align: center;
+    margin-top: 30px;
+}

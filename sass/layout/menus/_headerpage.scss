@@ -1,0 +1,20 @@
+/* HEADER PAGE MENU */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .fa-arrow-left {
+        color: black;
+        font-size: 25px;
+        position: absolute;
+        left: 20px;
+        top: 25px;
+    }
+}
+.photo_resto {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}

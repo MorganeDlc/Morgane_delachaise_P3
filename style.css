@@ -7,7 +7,9 @@ body {
 
 .btn {
   border-radius: 30px 30px 30px 30px;
-  padding: 16px 22px;
+  width: 47%;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 20px 0 40px 0;
   font-size: 100%;
   font-weight: 500;
@@ -44,6 +46,7 @@ body {
 }
 .header__logo {
   text-align: center;
+  justify-content: center;
   font-family: Shrikhand;
   padding: 15px;
   margin: 0px;
@@ -228,4 +231,99 @@ ul {
   top: 10px;
   right: 10px;
   border-radius: 3px;
+}
+
+/* HEADER PAGE MENU */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header .fa-arrow-left {
+  color: black;
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 25px;
+}
+
+.photo_resto {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}
+
+/* MENUS PAGE MENU */
+.all_menu {
+  background-color: #F6F6F6;
+  border-radius: 50px 50px 0 0;
+  padding: 20px;
+  margin-top: -50px;
+  position: relative;
+}
+.all_menu header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.all_menu h1 {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 100;
+  margin: 0;
+}
+.all_menu i {
+  font-size: 25px;
+}
+
+.menu h2 {
+  font-size: 110%;
+  font-weight: 100;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+.menu__border {
+  border-top: 3px solid #99E2D0;
+  height: 2px;
+  width: 10%;
+}
+
+/* CARDS PAGE MENU */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 4px 4px 10px rgb(192, 192, 192);
+}
+.card__texte h3 {
+  margin: 5px 0 7px 0;
+  font-weight: 500;
+  font-size: 120%;
+  flex-wrap: nowrap;
+}
+.card__texte p {
+  margin: 5px 0 5px 0px;
+  font-weight: 300;
+}
+.card__prix {
+  font-weight: 500;
+}
+.card__prix p {
+  margin: 0 10px 5px 0;
+}
+.card__check {
+  display: none;
+}
+
+.menu-button {
+  text-align: center;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */

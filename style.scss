@@ -6,9 +6,13 @@
 @import "./sass/components/button.scss";
 
 @import "./sass/layout/layout.scss";
-@import "./sass/layout/header.scss";
-@import "./sass/layout/footer.scss";
-@import "./sass/layout/formulaire.scss";
-@import "./sass/layout/explore.scss";
-@import "./sass/layout/fonctionnement.scss";
-@import "./sass/layout/restaurants.scss";
+@import "./sass/layout/accueil/header.scss";
+@import "./sass/layout/accueil/footer.scss";
+@import "./sass/layout/accueil/formulaire.scss";
+@import "./sass/layout/accueil/explore.scss";
+@import "./sass/layout/accueil/fonctionnement.scss";
+@import "./sass/layout/accueil/restaurants.scss";
+
+@import "./sass/layout/menus/headerpage.scss";
+@import "./sass/layout/menus/menuspage.scss";
+@import "./sass/layout/menus/cardmenu.scss";

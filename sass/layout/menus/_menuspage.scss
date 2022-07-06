@@ -1,0 +1,40 @@
+/* MENUS PAGE MENU */
+
+.all_menu {
+    background-color: #F6F6F6;
+    border-radius: 50px 50px 0 0;
+    padding: 20px;
+    margin-top: -50px;
+    position: relative;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    h1 {
+        font-family: Shrikhand;
+        font-size: 30px;
+        font-weight: 100;
+        margin: 0;
+    }
+    i {
+        font-size: 25px;
+    }
+}
+
+.menu {
+    h2 {
+        font-size: 110%;
+        font-weight: 100;
+        margin-bottom: 5px;
+        margin-top: 40px;
+    }
+    &__border {
+        border-top: 3px solid $color-tertiary;
+        height: 2px;
+        width: 10%;
+    }
+}
+
