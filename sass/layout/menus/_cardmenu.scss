@@ -1,36 +1,78 @@
 /* CARDS PAGE MENU */
 
-.card {
-    background-color: white;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    @include ombre-gris;
+.menu {
+    article {
+        background-color: white;
+        padding-left: 12px;
+        margin-top: 20px;
+        border-radius: 20px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        animation: apparition 2s;
+        animation-fill-mode: both;
+        cursor: pointer;
+        @include ombre-gris;
+
+        &:hover .menu__check{
+            transition: margin-right 0.6s;
+            margin-right: 0;
+          }
+
+        &:hover .menu__check i {  /* NE MARCHE PAS*/
+            animation: circle-check 0.7s;
+        }
+    }
+
     &__texte {
         h3 {
             margin: 5px 0 7px 0;
             font-weight: 500;
             font-size: 120%;
             flex-wrap: nowrap;
+            overflow: hidden;
         }
         p {
-            margin: 5px 0 5px 0px;
+            margin: 5px 0 10px 0px;
             font-weight: 300;
         }
     }
     &__prix {
         font-weight: 500;
+        position: absolute;
+        top: 40px;
+        right: 65px;
         p {
             margin: 0 10px 5px 0;
         }
     }
     &__check {
-        display: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        color: white;
+        border-radius: 0px 20px 20px 0px;
+        height: 100%;
+        width: 60px;
+        margin-left: 20px;
+        margin-right: -80px;
+    }
+
+    .delay1 {
+        animation-delay: 0.5s;
+    }
+    .delay2 {
+        animation-delay: 1s;
+    }
+    .delay3 {
+        animation-delay: 1.5s;
     }
 }
+
+
 .menu-button {
     text-align: center;
     margin-top: 30px;
