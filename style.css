@@ -42,6 +42,22 @@ body {
     transform: rotate(0deg);
   }
 }
+@-webkit-keyframes glissement-prix {
+  0% {
+    margin-right: -100px;
+  }
+  100% {
+    margin-right: 10px;
+  }
+}
+@keyframes glissement-prix {
+  0% {
+    margin-right: -100px;
+  }
+  100% {
+    margin-right: 10px;
+  }
+}
 .btn {
   border-radius: 30px 30px 30px 30px;
   width: 47%;
@@ -63,6 +79,7 @@ body {
 
 .page {
   width: 100%;
+  margin: 0 auto;
 }
 
 @media all and (min-width: 768px) {
@@ -333,50 +350,61 @@ ul {
 
 /* CARDS PAGE MENU */
 .menu article {
+  width: 100%;
   background-color: white;
   padding-left: 12px;
   margin-top: 20px;
   border-radius: 20px;
   height: 70px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-  position: relative;
-  -webkit-animation: apparition 2s;
-          animation: apparition 2s;
+  justify-content: space-between;
+  -webkit-animation: apparition 1s;
+          animation: apparition 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+  overflow: hidden;
   cursor: pointer;
   box-shadow: 4px 4px 10px rgb(192, 192, 192);
 }
 .menu article:hover .menu__check {
-  transition: margin-right 0.6s;
-  margin-right: 0;
+  transform: scaleX(1);
 }
 .menu article:hover .menu__check i {
-  /* NE MARCHE PAS*/
   -webkit-animation: circle-check 0.7s;
           animation: circle-check 0.7s;
 }
+.menu article:hover .menu__prix {
+  transform: translate(-40px, 0px);
+}
+.menu__texte {
+  width: 70%;
+}
 .menu__texte h3 {
   margin: 5px 0 7px 0;
+  padding-right: 5px;
   font-weight: 500;
   font-size: 120%;
-  flex-wrap: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 .menu__texte p {
   margin: 5px 0 10px 0px;
   font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu__prix {
   font-weight: 500;
-  position: absolute;
-  top: 40px;
-  right: 65px;
+  width: 50px;
+  margin-right: -125px;
+  transition: transform 0.6s;
 }
 .menu__prix p {
-  margin: 0 10px 5px 0;
+  margin-bottom: 10px;
 }
 .menu__check {
   display: flex;
@@ -387,20 +415,22 @@ ul {
   border-radius: 0px 20px 20px 0px;
   height: 100%;
   width: 60px;
-  margin-left: 20px;
-  margin-right: -80px;
+  margin-left: 10px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.6s;
 }
 .menu .delay1 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .menu .delay2 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 .menu .delay3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .menu-button {

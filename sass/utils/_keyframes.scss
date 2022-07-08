@@ -18,3 +18,12 @@
         transform: rotate(0deg);
     }
 }
+
+@keyframes glissement-prix {
+    0% {
+        margin-right: -100px;
+    }
+    100% {
+        margin-right: 10px;
+    }
+}
