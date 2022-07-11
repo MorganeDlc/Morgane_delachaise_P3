@@ -1,0 +1,31 @@
+/* HEARTS */
+
+.hearts {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 40px;
+    }
+    .fa-solid {
+        opacity: 0;
+        background:-webkit-linear-gradient(top, $color-primary, $color-secondary);
+        background-clip:text;
+        color:transparent;
+
+        &:hover {
+            opacity: 1;
+            transition: opacity 1s;
+        }
+    }
+
+    .fa-regular {
+        &:hover {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+    }
+
+}

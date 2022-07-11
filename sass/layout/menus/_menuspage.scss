@@ -6,6 +6,7 @@
     padding: 20px;
     margin-top: -50px;
     position: relative;
+
     header {
         display: flex;
         align-items: center;
@@ -19,8 +20,12 @@
         font-weight: 100;
         margin: 0;
     }
-    i {
-        font-size: 25px;
+    .hearts {
+        margin-top: -28px;
+        i {
+            font-size: 28px;
+            cursor: pointer;
+        }
     }
 }
 
