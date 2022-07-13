@@ -3,17 +3,77 @@
     margin: 0 auto;
 }
 
+/* MEDIA QUERIES */
+
+        /* TABLETTE */
 
 @media all and (min-width: 768px) {
     .page {
         width: 100%;
-        max-width: 768px;
     }
+    /* accueil */
+    .explore br {
+        display: none;
+    }
+    .explore .btn {
+        width: 280px;
+    }
+    .resto-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .cards {
+        width: 47%;
+    }
+    .footer {
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+    }
+
+    /* menu */
+    .container-menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 20px;
+    }
+    .menu {
+        width: 47%;
+    }
+    .menu-button .btn {
+        width: 280px;
+    }
+
 }
+
+
+
+        /* DESKTOP */
 
 @media all and (min-width: 1100px) {
     .page {
         width: 100%;
-        max-width: 1100px;
+        max-width: 1200px;
     }
+    /* accueil */
+    .fonctionnement ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .etapes {
+        width: 30%;
+    }
+    .etapes__contain {
+        padding: 12px 10px 12px 10px;
+    }
+
+    
 }

@@ -58,96 +58,6 @@ body {
     margin-right: 10px;
   }
 }
-@-webkit-keyframes loader {
-  0% {
-    background-color: rgba(255, 255, 255, 0.847);
-    opacity: 1;
-  }
-  60% {
-    background-color: transparent;
-    opacity: 1;
-  }
-  90% {
-    opacity: 0, 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-@keyframes loader {
-  0% {
-    background-color: rgba(255, 255, 255, 0.847);
-    opacity: 1;
-  }
-  60% {
-    background-color: transparent;
-    opacity: 1;
-  }
-  90% {
-    opacity: 0, 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -10;
-  }
-}
-@-webkit-keyframes colorchange {
-  0% {
-    color: white;
-  }
-  10% {
-    color: #99E2D0;
-  }
-  20% {
-    color: #FF79DA;
-  }
-  30% {
-    color: #9356DC;
-  }
-  50% {
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 1;
-  }
-  100% {
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0;
-  }
-}
-@keyframes colorchange {
-  0% {
-    color: white;
-  }
-  10% {
-    color: #99E2D0;
-  }
-  20% {
-    color: #FF79DA;
-  }
-  30% {
-    color: #9356DC;
-  }
-  50% {
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 1;
-  }
-  100% {
-    background: -webkit-linear-gradient(top, #9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    opacity: 0;
-  }
-}
 .btn {
   border-radius: 30px 30px 30px 30px;
   width: 47%;
@@ -198,49 +108,69 @@ body {
   margin: 0 auto;
 }
 
+/* MEDIA QUERIES */
+/* TABLETTE */
 @media all and (min-width: 768px) {
   .page {
     width: 100%;
-    max-width: 768px;
+  }
+  /* accueil */
+  .explore br {
+    display: none;
+  }
+  .explore .btn {
+    width: 280px;
+  }
+  .resto-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cards {
+    width: 47%;
+  }
+  .footer__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  /* menu */
+  .container-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+  .menu {
+    width: 47%;
+  }
+  .menu-button .btn {
+    width: 280px;
   }
 }
+/* DESKTOP */
 @media all and (min-width: 1100px) {
   .page {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
+  }
+  /* accueil */
+  .fonctionnement ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .etapes {
+    width: 30%;
+  }
+  .etapes__contain {
+    padding: 12px 10px 12px 10px;
   }
 }
-/* LOADER */
-.loader {
-  position: fixed;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  background-color: rgba(255, 255, 255, 0.847);
-  -webkit-animation: loader 2s;
-          animation: loader 2s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  justify-content: center;
-  align-items: center;
-}
-.loader__contain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-.loader__logo {
-  font-family: Shrikhand;
-  font-size: 70px;
-  -webkit-animation: colorchange 9s;
-          animation: colorchange 9s;
-}
-
-/* HEADER */
+/* LOADER */ /* HEADER */
 .header {
   margin: 0px;
 }
@@ -260,7 +190,7 @@ body {
 }
 .footer__logo {
   font-family: Shrikhand;
-  font-size: 110%;
+  font-size: 20px;
 }
 .footer__list {
   list-style: none;
@@ -272,7 +202,7 @@ body {
 .footer__list a {
   color: white;
   text-decoration: none;
-  font-size: 90%;
+  font-size: 15px;
 }
 .footer__icon {
   display: flex;
@@ -314,12 +244,12 @@ body {
   text-align: center;
 }
 .explore h2 {
-  font-size: 160%;
+  font-size: 25px;
   margin-bottom: 5px;
 }
 .explore p {
   font-weight: 300;
-  font-size: 120%;
+  font-size: 20px;
 }
 
 /* FONTIONNEMENT */
@@ -327,7 +257,7 @@ body {
   padding: 30px 20px;
 }
 .fonctionnement h2 {
-  font-size: 160%;
+  font-size: 25px;
 }
 
 ul {
@@ -344,7 +274,7 @@ ul {
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
-  font-size: 90%;
+  font-size: 15px;
   padding: 5px 9px;
   position: absolute;
 }
@@ -356,7 +286,7 @@ ul {
   box-shadow: 3px 3px 13px #d2d2d2;
   display: flex;
   align-items: center;
-  width: 500px;
+  width: 100%;
 }
 .etapes__contain i {
   color: gray;
@@ -364,7 +294,7 @@ ul {
   font-size: 20px;
 }
 .etapes__contain p {
-  font-size: 110%;
+  font-size: 17px;
   font-weight: 500;
   color: rgb(52, 52, 52);
   margin-left: 10px;
@@ -384,7 +314,7 @@ ul {
   padding-bottom: 50px;
 }
 .restaurants h2 {
-  font-size: 160%;
+  font-size: 25px;
 }
 
 .cards {
@@ -487,7 +417,7 @@ ul {
 }
 
 .menu h2 {
-  font-size: 110%;
+  font-size: 20px;
   font-weight: 100;
   margin-bottom: 5px;
   margin-top: 40px;
@@ -513,7 +443,6 @@ ul {
           animation: apparition 1s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  overflow: hidden;
   cursor: pointer;
   box-shadow: 4px 4px 10px rgb(192, 192, 192);
 }
@@ -525,16 +454,19 @@ ul {
           animation: circle-check 0.7s;
 }
 .menu article:hover .menu__prix {
-  transform: translate(-40px, 0px);
+  transform: translate(-40%, 0%);
+}
+.menu article:hover .menu__texte {
+  width: 70%;
 }
 .menu__texte {
-  width: 70%;
+  width: 80%;
 }
 .menu__texte h3 {
   margin: 5px 0 7px 0;
   padding-right: 5px;
   font-weight: 500;
-  font-size: 120%;
+  font-size: 17px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -542,6 +474,7 @@ ul {
 }
 .menu__texte p {
   margin: 5px 0 10px 0px;
+  width: 90%;
   font-weight: 300;
   overflow: hidden;
   white-space: nowrap;
@@ -549,9 +482,10 @@ ul {
 }
 .menu__prix {
   font-weight: 500;
-  width: 50px;
-  margin-right: -125px;
-  transition: transform 0.6s;
+  width: 70px;
+  margin-right: -25%;
+  padding-left: 10px;
+  transition: transform 0.7s;
 }
 .menu__prix p {
   margin-bottom: 10px;
