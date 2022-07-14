@@ -1,32 +1,26 @@
 /* LOADER */
 
-// .loader {
-// position: fixed;
-// display: flex;
-// height: 100%;
-// width: 100%;
-// z-index: 10;
-// background-color: rgba(255, 255, 255, 0.847);
-// animation: loader 2s;
-// animation-delay: 5s;
-// animation-fill-mode: both;
-// justify-content: center;
-// align-items: center;
+.loader {
+position: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+z-index: 10;
+background-color: rgba(255, 255, 255, 0.847);
+animation: loader 2s;
+animation-delay: 5s;
+animation-fill-mode: both;
 
-// &__contain {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: relative;
-// }
+&__logo {
+    font-family: Shrikhand;
+    font-size: 70px;
+    animation: colorchange 9s;
+    padding: 10px;
+}
 
-// &__logo {
-//     font-family: Shrikhand;
-//     font-size: 70px;
-//     animation: colorchange 9s;
-// }
-
-// }
+}
 
 
 

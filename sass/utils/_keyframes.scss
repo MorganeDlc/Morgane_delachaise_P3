@@ -32,50 +32,50 @@
 
 
 
-// @keyframes loader {
-//     0% {
-//         background-color: rgba(255, 255, 255, 0.847);
-//         opacity: 1;
-//     }
-//     60% {
-//         background-color: transparent;
-//         opacity: 1;
-//     }
-//     90% {
-//         opacity: 0,2;
-//     }
-//     100%{
-//       opacity: 0;
-//       z-index: -10;
-//     }
-//   }
+@keyframes loader {
+    0% {
+        background-color: rgba(255, 255, 255, 0.847);
+        opacity: 1;
+    }
+    60% {
+        background-color: transparent;
+        opacity: 1;
+    }
+    90% {
+        opacity: 0,2;
+    }
+    100%{
+      opacity: 0;
+      z-index: -10;
+    }
+  }
 
-// @keyframes colorchange {
-//     0% {
-//         color: white;
-//     }
-//     10% {
-//         color: $color-tertiary;
-//     }
-//     20% {
-//         color: $color-secondary;
-//     }
-//     30% {
-//         color: $color-primary;
-//     }
-//     50% {
-//         background:-webkit-linear-gradient(top, $color-primary, $color-secondary);
-//         background-clip:text;
-//         -webkit-background-clip:text;
-//         color:transparent;
-//         opacity: 1;
-//     }
-//     100% {
-//         background:-webkit-linear-gradient(top, $color-primary, $color-secondary);
-//         background-clip:text;
-//         -webkit-background-clip:text;
-//         color:transparent;
-//         opacity: 0;
-//     }
+@keyframes colorchange {
+    0% {
+        color: white;
+    }
+    10% {
+        color: $color-tertiary;
+    }
+    20% {
+        color: $color-secondary;
+    }
+    30% {
+        color: $color-primary;
+    }
+    50% {
+        background:-webkit-linear-gradient(top, $color-primary, $color-secondary);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        opacity: 1;
+    }
+    100% {
+        background:-webkit-linear-gradient(top, $color-primary, $color-secondary);
+        background-clip:text;
+        -webkit-background-clip:text;
+        color:transparent;
+        opacity: 0;
+    }
 
-// }
+}
