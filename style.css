@@ -42,22 +42,6 @@ body {
     transform: rotate(0deg);
   }
 }
-@-webkit-keyframes glissement-prix {
-  0% {
-    margin-right: -100px;
-  }
-  100% {
-    margin-right: 10px;
-  }
-}
-@keyframes glissement-prix {
-  0% {
-    margin-right: -100px;
-  }
-  100% {
-    margin-right: 10px;
-  }
-}
 @-webkit-keyframes loader {
   0% {
     background-color: rgba(255, 255, 255, 0.847);
@@ -69,7 +53,7 @@ body {
   }
   100% {
     opacity: 0;
-    z-index: -20;
+    z-index: -30;
   }
 }
 @keyframes loader {
@@ -83,7 +67,7 @@ body {
   }
   100% {
     opacity: 0;
-    z-index: -20;
+    z-index: -30;
   }
 }
 @-webkit-keyframes colorchange {

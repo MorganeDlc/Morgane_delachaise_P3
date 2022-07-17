@@ -21,15 +21,6 @@
     }
 }
 
-@keyframes glissement-prix {
-    0% {
-        margin-right: -100px;
-    }
-    100% {
-        margin-right: 10px;
-    }
-}
-
 
 
 @keyframes loader {
@@ -43,7 +34,7 @@
     }
     100%{
       opacity: 0;
-      z-index: -20;
+      z-index: -30;
     }
   }
 
