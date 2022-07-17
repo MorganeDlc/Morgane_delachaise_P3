@@ -41,12 +41,9 @@
         background-color: transparent;
         opacity: 1;
     }
-    90% {
-        opacity: 0,2;
-    }
     100%{
       opacity: 0;
-      z-index: -10;
+      z-index: -20;
     }
   }
 
